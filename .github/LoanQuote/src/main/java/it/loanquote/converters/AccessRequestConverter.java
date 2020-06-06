@@ -1,4 +1,4 @@
-package it.aifa.cinquepercento.converter;
+package it.loanquote.converters;
 
 import java.util.List;
 import java.util.Optional;

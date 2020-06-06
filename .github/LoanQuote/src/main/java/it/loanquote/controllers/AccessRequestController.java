@@ -1,4 +1,4 @@
-package it.aifa.cinquepercento.controller;
+package it.loanquote.controllers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

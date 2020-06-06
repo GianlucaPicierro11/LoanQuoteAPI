@@ -1,4 +1,4 @@
-package it.aifa.cinquepercento.repository;
+package it.loanquote.repositories;
 
 import java.util.Collection;
 import java.util.List;

@@ -1,4 +1,4 @@
-package it.aifa.cinquepercento.entity;
+package it.loanquote.entities;
 
 import java.io.Serializable;
 import java.util.ArrayList;

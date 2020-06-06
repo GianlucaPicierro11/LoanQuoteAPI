@@ -1,4 +1,4 @@
-package it.aifa.cinquepercento.service;
+package it.loanquote.services;
 
 import static it.aifa.cinquepercento.entity.QAccessRequest.accessRequest;
 import java.util.ArrayList;

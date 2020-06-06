@@ -1,4 +1,4 @@
-package it.aifa.cinquepercento.dto;
+package it.loanquote.dtos;
 
 import java.util.Date;
 import javax.validation.constraints.NotNull;

@@ -26,3 +26,722 @@ Binding(COMMAND+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.tigris.subversion.clientadapter.javahl 1 0 2020-06-06 11:50:41.806
+!MESSAGE Failed to load JavaHL Library.
+These are the errors that were encountered:
+no libsvnjavahl-1 in java.library.path
+no svnjavahl-1 in java.library.path
+no svnjavahl in java.library.path
+java.library.path = /Users/gianluca.picierro11@ibm.com/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:50:59.339
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:50:59.340
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@709d879b[org.springframework.tooling.boot.ls:1.8.0.201906200642(id=1287)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:50:59.342
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:50:59.419
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-06 11:51:02.005
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:108)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:04.575
+!MESSAGE Boot LS startup time from start to initialized: 5187ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-06 11:51:04.612
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:108)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:04.624
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vphJzSxsisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:04.624
+!MESSAGE subscribing to classpath changes: sts4.classpath.vphJzSxs isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:04.628
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:04.632
+!MESSAGE subsribers = {sts4.classpath.vphJzSxs=Send Classpath Notifications(874)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:04.633
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.852
+!MESSAGE project loanQuoteId ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.853
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.853
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.853
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vphJzSxs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.854
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.860
+!MESSAGE classpath=22 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.861
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 22
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.862
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:51:05.891
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:52:59.097
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:52:59.098
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:52:59.100
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:52:59.101
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:52:59.101
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:52:59.119
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2020-06-06 11:52:59.653
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2020-06-06 11:52:59.653
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2020-06-06 11:52:59.653
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 29, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 33, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 43, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 47, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 52, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 56, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 60, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 64, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 68, column 15
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 29, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 33, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 43, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 47, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 52, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 56, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 60, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 64, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 68, column 15
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:836)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1069)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1067)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:263)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 11:55:25.376
+!MESSAGE failed to load maven project for org.eclipse.ui.part.FileEditorInput(/loanQuoteId/pom.xml)
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:851)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1069)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1067)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 30, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 34, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 44, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 48, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 53, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 57, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 61, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 65, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 69, column 14
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 30, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 34, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 44, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 48, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 53, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 57, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 61, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 65, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 69, column 14
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:836)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1069)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1067)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2020-06-06 11:55:25.377
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2020-06-06 11:55:25.377
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 30, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 34, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 44, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 48, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 53, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 57, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 61, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 65, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 69, column 14
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 30, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 34, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 44, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 48, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 53, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 57, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 61, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 65, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 69, column 14
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:836)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1069)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1067)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2020-06-06 11:55:27.906
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2020-06-06 11:55:27.907
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2020-06-06 11:55:27.907
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 30, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 34, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 44, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 48, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 53, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 57, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 61, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 65, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 69, column 14
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-web:jar is missing. @ line 30, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter:jar is missing. @ line 34, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-log4j2:jar is missing. @ line 44, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is missing. @ line 48, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa:jar is missing. @ line 53, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-security:jar is missing. @ line 57, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-devtools:jar is missing. @ line 61, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-actuator:jar is missing. @ line 65, column 14
+[ERROR] 'dependencies.dependency.version' for org.springframework.kafka:spring-kafka:jar is missing. @ line 69, column 14
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:836)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1069)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1067)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:263)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 11:56:09.459
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter:2.1.7.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:sources:2.1.7.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter:jar:sources:2.1.7.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:09.459
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:sources:2.1.7.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:09.459
+!MESSAGE Missing org.springframework.boot:spring-boot-starter:jar:sources:2.1.7.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 11:56:11.616
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-logging:2.1.7.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.7.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.7.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:11.616
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.7.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:11.616
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.7.RELEASE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:15.370
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:15.371
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:15.373
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:15.374
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:15.374
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:15.390
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 11:56:16.857
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-aop:2.1.7.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.7.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.7.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:16.857
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.7.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:16.857
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.7.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 11:56:20.441
+!MESSAGE Could not download javadoc for org.springframework.boot:spring-boot-starter:2.1.7.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.7.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.7.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:20.442
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.7.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:20.442
+!MESSAGE Missing org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.7.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 11:56:20.833
+!MESSAGE Could not download javadoc for org.springframework.boot:spring-boot-starter-logging:2.1.7.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.7.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.7.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:20.833
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.7.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:20.833
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.7.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 11:56:21.192
+!MESSAGE Could not download javadoc for org.springframework.boot:spring-boot-starter-aop:2.1.7.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-aop:jar:javadoc:2.1.7.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-aop:jar:javadoc:2.1.7.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:21.192
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-aop:jar:javadoc:2.1.7.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 11:56:21.192
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-aop:jar:javadoc:2.1.7.RELEASE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:21.270
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:21.270
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:21.273
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:21.273
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:21.273
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:56:21.289
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2020-06-06 11:56:59.824
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:22.940
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:22.942
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:22.944
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:22.944
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:22.944
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:22.983
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:40.761
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:40.762
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:40.799
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:40.800
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:40.800
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 11:57:40.821
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:10.990
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:10.990
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:10.992
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:10.992
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:10.992
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:11.009
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:15.745
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:15.745
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:15.747
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:15.747
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:15.747
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:00:15.773
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:57.952
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:57.953
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:57.954
+!MESSAGE classpath=68 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:57.955
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 68
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:57.955
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:57.966
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:59.439
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:59.440
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:59.447
+!MESSAGE classpath=68 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:59.447
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 68
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:59.448
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:01:59.473
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:31.511
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:31.512
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:31.515
+!MESSAGE classpath=130 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:31.515
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 130
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:31.515
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:31.539
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:35.902
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:35.902
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:35.905
+!MESSAGE classpath=130 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:35.905
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 130
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:35.905
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:35.913
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:40.327
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:40.328
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:40.330
+!MESSAGE classpath=130 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:40.331
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 130
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:40.331
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:40.360
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:50.909
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:50.910
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:50.913
+!MESSAGE classpath=130 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:50.914
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 130
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:50.914
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 12:07:50.944
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
