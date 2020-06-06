@@ -1,4 +1,4 @@
-package loanQuote;
+package it.loanquote;
 
 import static org.junit.Assert.assertTrue;
 

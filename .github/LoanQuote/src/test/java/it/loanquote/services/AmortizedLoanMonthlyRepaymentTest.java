@@ -1,4 +1,4 @@
-package com.github.hansonhsc.loan;
+package it.loanquote.services;
 
 import com.opencsv.bean.CsvToBeanBuilder;
 import org.junit.jupiter.api.Test;

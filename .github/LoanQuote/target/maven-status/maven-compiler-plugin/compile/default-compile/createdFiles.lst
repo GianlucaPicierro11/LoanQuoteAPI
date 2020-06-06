@@ -1,0 +1,9 @@
+it/loanquote/services/quote/LoanQuote.class
+it/loanquote/services/quote/Lender.class
+it/loanquote/services/quote/LoanQuoteApplication.class
+it/loanquote/services/quote/LoanQuoteParameterValidationException.class
+it/loanquote/services/quote/LoanQuoteCalculator.class
+it/loanquote/services/quote/InsufficientLendersException.class
+it/loanquote/services/AmortizedLoan.class
+it/loanquote/LoanQuoteApplication.class
+it/loanquote/MvcConfig.class

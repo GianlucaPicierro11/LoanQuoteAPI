@@ -1,6 +1,7 @@
-package com.github.hansonhsc.loan.quote;
+package it.loanquote.services.quote;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.*;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -8,8 +9,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
+import org.junit.jupiter.api.Test;
 
 public class LoanQuoteCalculatorQuoteTest {
     @Test

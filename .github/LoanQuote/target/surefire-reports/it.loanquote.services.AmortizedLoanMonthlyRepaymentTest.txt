@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: it.loanquote.services.AmortizedLoanMonthlyRepaymentTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.249 s - in it.loanquote.services.AmortizedLoanMonthlyRepaymentTest

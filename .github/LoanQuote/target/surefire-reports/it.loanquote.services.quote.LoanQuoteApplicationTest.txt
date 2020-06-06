@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: it.loanquote.services.quote.LoanQuoteApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.172 s <<< FAILURE! - in it.loanquote.services.quote.LoanQuoteApplicationTest
+testInvalidCsvFile  Time elapsed: 0.011 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Running application with no args should give error message ==> expected: <[Unable to parse invalid market file: Error capturing CSV header!, Usage: java -jar [loan_quote_jar_file] [market_file] [loan_amount]]> but was: <[Invalid market file: README.md, Usage: java -jar [loan_quote_jar_file] [market_file] [loan_amount]]>
+

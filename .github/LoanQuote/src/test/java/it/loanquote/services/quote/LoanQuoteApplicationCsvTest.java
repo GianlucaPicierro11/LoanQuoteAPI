@@ -1,4 +1,4 @@
-package com.github.hansonhsc.loan.quote;
+package it.loanquote.services.quote;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.github.hansonhsc.loan.quote.LoanQuoteApplication.createLoanQuoteCalculator;
+import static it.loanquote.services.quote.LoanQuoteApplication.createLoanQuoteCalculator;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;

@@ -1,4 +1,4 @@
-package com.github.hansonhsc.loan.quote;
+package it.loanquote.services.quote;
 
 import org.junit.jupiter.api.Test;
 

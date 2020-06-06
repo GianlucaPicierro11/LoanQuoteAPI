@@ -1,8 +1,8 @@
-package com.github.hansonhsc.loan.quote;
+package it.loanquote.services.quote;
 
 import org.junit.jupiter.api.Test;
 
-import static com.github.hansonhsc.loan.quote.LoanQuoteApplication.getLoanAmount;
+import static it.loanquote.services.quote.LoanQuoteApplication.getLoanAmount;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 

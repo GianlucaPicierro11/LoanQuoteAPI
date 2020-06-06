@@ -1,5 +1,4 @@
-
 /**
- * Provides classes that form the Loan Quote Calculator
+ * Provides classes related to loan calculations
  */
-package it.loanquote.test;
+package it.loanquote.services;

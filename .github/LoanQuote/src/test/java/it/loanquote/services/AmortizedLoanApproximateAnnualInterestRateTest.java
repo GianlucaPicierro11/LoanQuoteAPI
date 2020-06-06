@@ -1,4 +1,4 @@
-package com.github.hansonhsc.loan;
+package it.loanquote.services;
 
 import com.opencsv.bean.CsvToBeanBuilder;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 
-import static com.github.hansonhsc.loan.AmortizedLoan.getApproximateAnnualInterestRate;
+import static it.loanquote.services.AmortizedLoan.getApproximateAnnualInterestRate;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
