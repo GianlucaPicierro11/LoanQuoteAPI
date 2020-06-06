@@ -21,7 +21,7 @@ import it.loanquote.services.IAmortizedLoanService;
 @RequestMapping("/amortized-loan")
 @Validated
 public class AmortizedLoanController {
-//
+
   private static final Logger log = LoggerFactory.getLogger(AmortizedLoanController.class);
 
   @Autowired

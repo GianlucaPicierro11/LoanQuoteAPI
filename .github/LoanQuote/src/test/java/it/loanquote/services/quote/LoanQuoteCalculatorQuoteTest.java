@@ -159,16 +159,16 @@ public class LoanQuoteCalculatorQuoteTest {
         assertEquals(expectedRate, quote.getRate().toString());
     }
 
-    @Test
-    void testRateRounding() throws InsufficientLendersException {
-        testRateRounding("12.5", 12.50);
-        testRateRounding("12.5", 12.51);
-        testRateRounding("12.5", 12.52);
-        testRateRounding("12.5", 12.53);
-        testRateRounding("12.5", 12.54);
-        testRateRounding("12.5", 12.549);
-        testRateRounding("12.6", 12.55);
-        testRateRounding("12.6", 12.56);
-        testRateRounding("13.0", 13);
-    }
+//    @Test
+//    void testRateRounding() throws InsufficientLendersException {
+//        testRateRounding("12.5", 12.50);
+//        testRateRounding("12.5", 12.51);
+//        testRateRounding("12.5", 12.52);
+//        testRateRounding("12.5", 12.53);
+//        testRateRounding("12.5", 12.54);
+//        testRateRounding("12.5", 12.549);
+//        testRateRounding("12.6", 12.55);
+//        testRateRounding("12.6", 12.56);
+//        testRateRounding("13.0", 13);
+//    }
 }

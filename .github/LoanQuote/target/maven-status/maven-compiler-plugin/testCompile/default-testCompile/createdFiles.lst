@@ -1,0 +1,10 @@
+it/loanquote/services/quote/LoanQuoteApplicationLoanAmountTest.class
+it/loanquote/services/quote/LoanQuoteCalculatorQuoteTest.class
+it/loanquote/services/quote/LoanQuoteApplicationTest.class
+it/loanquote/services/Payment.class
+it/loanquote/AppTest.class
+it/loanquote/services/quote/LoanQuoteCalculatorLendersForLoanTest.class
+it/loanquote/services/quote/LoanQuoteApplicationTestCase.class
+it/loanquote/services/quote/LoanQuoteApplicationIT.class
+it/loanquote/services/quote/LoanQuoteApplicationCsvTest.class
+it/loanquote/services/quote/LoanQuoteCalculatorLenderSortingTest.class

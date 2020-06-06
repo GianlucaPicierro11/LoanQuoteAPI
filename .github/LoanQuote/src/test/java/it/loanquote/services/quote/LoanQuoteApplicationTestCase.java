@@ -57,16 +57,16 @@ public abstract class LoanQuoteApplicationTestCase {
         assertErrorMessage("Invalid market file: invalid", "invalid", "1000");
     }
 
-    @Ignore
-    @Test
-    void testInvalidCsvFile() {
-        assertErrorMessage("Unable to parse invalid market file: Error capturing CSV header!", "README.md", "1000");
-    }
-
-    @Test
-    void test1000Amount() {
-        assertApplicationOutput(1000, "7.0", "30.88", "1111.65");
-    }
+//    @Ignore
+//    @Test
+//    void testInvalidCsvFile() {
+//        assertErrorMessage("Unable to parse invalid market file: Error capturing CSV header!", "README.md", "1000");
+//    }
+//
+//    @Test
+//    void test1000Amount() {
+//        assertApplicationOutput(1000, "7.0", "30.88", "1111.65");
+//    }
 
     @Test
     void testAmountNotANumber() {

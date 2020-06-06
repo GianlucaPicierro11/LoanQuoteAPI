@@ -14,19 +14,22 @@
 //import static org.junit.jupiter.api.Assertions.assertThrows;
 //
 //public class AmortizedLoanMonthlyRepaymentTest {
-//    private String getMonthlyRepayment(final int principal, final double annualInterestRatePercent, final int numberOfPaymentPeriods) {
-////        return AmortizedLoan.getMonthlyRepayment(
-////                new BigDecimal(principal),
-////                new BigDecimal(annualInterestRatePercent).divide(new BigDecimal(100), 10, BigDecimal.ROUND_HALF_UP),
-////                numberOfPaymentPeriods
-//////        ).setScale(2, ROUND_HALF_UP).toString();
+//    
+//	@Autowired
+//	private IAmortizedLoanService amortizedLoanService;
+//	
+//	private String getMonthlyRepayment(final int principal, final double annualInterestRatePercent, final int numberOfPaymentPeriods) {
+//        return amortizedLoanService.getMonthlyRepayment(
+//                new BigDecimal(principal),
+//                new BigDecimal(annualInterestRatePercent).divide(new BigDecimal(100), 10, BigDecimal.ROUND_HALF_UP),
+//                numberOfPaymentPeriods
+//        ).setScale(2, ROUND_HALF_UP).toString();
 //    }
-//    @Autowired
-//    private IAmortizedLoanService amortizedLoanService;
+//
 //    
 //    @Test
 //    void test0Principal() {
-//        assertEquals("0.00", amortizedLoanService.getMonthlyRepayment(0, 1, 36));
+//        assertEquals("0.00", getMonthlyRepayment(0, 1, 36));
 //    }
 //
 //    @Test

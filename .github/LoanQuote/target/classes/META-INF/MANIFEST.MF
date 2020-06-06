@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: loanQuoteId
-Implementation-Version: 1.0-SNAPSHOT
-Built-By: gianluca.picierro11@ibm.com
-Implementation-Vendor-Id: loanQuote
-Build-Jdk: 1.8.0_241
-Implementation-URL: http://www.example.com
-Created-By: Maven Integration for Eclipse
-

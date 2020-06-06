@@ -3,6 +3,8 @@ package it.loanquote.services;
 import java.math.BigDecimal;
 import java.util.function.Function;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,6 +16,8 @@ import static java.math.RoundingMode.HALF_UP;
 @Service
 @Transactional
 public class AmortizedLoan implements IAmortizedLoanService {
+	
+	private static final Logger log = LoggerFactory.getLogger(AmortizedLoan.class);
 
     /**
      * Used in <code>newtonRaphsonMethod</code> to progress towards zero
@@ -28,36 +32,36 @@ public class AmortizedLoan implements IAmortizedLoanService {
 
 	@Override
 	public double getApproximateAnnualInterestRate(final double principal, final int term, final double monthlyPayment) {
-        if (principal <= 0) {
-            throw new IllegalArgumentException("Principal must be positive");
-        } else if (monthlyPayment < principal / term) {
-            throw new IllegalArgumentException("Monthly payment not enough to pay off principal in term even without interest");
-        } else if (term <= 0) {
-            throw new IllegalArgumentException("Term must be positive");
-        }
-
-        // a decent guess at the interest rate is to just assume entire monthly payment is interest
-        final double guessedMonthlyInterestRate = monthlyPayment / principal;
-
-        // each month, the new amount owed is calculated by multiplying (the amount currently owed (1) + guessedMonthlyInterestRate)
-        final double guessedMonthlyMultiplier = 1 + guessedMonthlyInterestRate;
-
-        // use Newton-Raphson method to estimate the monthly multiplier
-        final double estimatedMonthlyMultiplier = newtonRaphsonMethod(
-                guessedMonthlyMultiplier,
-
-                // this is the function that we want to find roots of
-                m -> (principal + monthlyPayment) * Math.pow(m, term) - principal * Math.pow(m, term + 1) - monthlyPayment,
-
-                // this is the derivative of the above
-                m -> (principal + monthlyPayment) * term * Math.pow(m, term - 1) - principal * (term + 1) * Math.pow(m, term)
-        );
-
-        final double estimatedMonthlyInterestRate = estimatedMonthlyMultiplier - 1;
-
-        // get the estimated annual interest rate
-        return 12 * estimatedMonthlyInterestRate;
-    }
+			if (principal <= 0) {
+	            throw new IllegalArgumentException("Principal must be positive");
+	        } else if (monthlyPayment < principal / term) {
+	            throw new IllegalArgumentException("Monthly payment not enough to pay off principal in term even without interest");
+	        } else if (term <= 0) {
+	            throw new IllegalArgumentException("Term must be positive");
+	        }
+	
+	        // a decent guess at the interest rate is to just assume entire monthly payment is interest
+	        final double guessedMonthlyInterestRate = monthlyPayment / principal;
+	
+	        // each month, the new amount owed is calculated by multiplying (the amount currently owed (1) + guessedMonthlyInterestRate)
+	        final double guessedMonthlyMultiplier = 1 + guessedMonthlyInterestRate;
+	
+	        // use Newton-Raphson method to estimate the monthly multiplier
+	        final double estimatedMonthlyMultiplier = newtonRaphsonMethod(
+	                guessedMonthlyMultiplier,
+	
+	                // this is the function that we want to find roots of
+	                m -> (principal + monthlyPayment) * Math.pow(m, term) - principal * Math.pow(m, term + 1) - monthlyPayment,
+	
+	                // this is the derivative of the above
+	                m -> (principal + monthlyPayment) * term * Math.pow(m, term - 1) - principal * (term + 1) * Math.pow(m, term)
+	        );
+	
+	        final double estimatedMonthlyInterestRate = estimatedMonthlyMultiplier - 1;
+	
+	        // get the estimated annual interest rate
+	        return 12 * estimatedMonthlyInterestRate;
+	}
 
     /**
      * Uses Newton-Raphson method to find an approximation of a root, given a function and its derivative
