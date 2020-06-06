@@ -1,4 +1,4 @@
-package loanQuote;
+package it.loanquote.test;
 
 /**
  * Hello world!

@@ -1,3 +1,5 @@
+package it.loanquote.test;
+
 import com.opencsv.bean.CsvBindByName;
 
 import java.math.BigDecimal;

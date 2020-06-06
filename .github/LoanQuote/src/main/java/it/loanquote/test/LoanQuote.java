@@ -1,3 +1,4 @@
+package it.loanquote.test;
 
 import java.math.BigDecimal;
 

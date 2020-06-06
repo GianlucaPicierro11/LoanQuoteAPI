@@ -1,3 +1,4 @@
+package it.loanquote.test;
 
 /**
  * Thrown when an argument given to the application is invalid

@@ -1,3 +1,4 @@
+package it.loanquote.test;
 
 import com.github.hansonhsc.loan.AmortizedLoan;
 
