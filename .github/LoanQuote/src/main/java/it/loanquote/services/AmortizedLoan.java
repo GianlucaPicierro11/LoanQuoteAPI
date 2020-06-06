@@ -3,12 +3,17 @@ package it.loanquote.services;
 import java.math.BigDecimal;
 import java.util.function.Function;
 
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import static java.math.RoundingMode.HALF_UP;
 
 /**
  * Utility class to provide calculations based on amortized loans
  */
-public final class AmortizedLoan {
+@Service
+@Transactional
+public class AmortizedLoan implements IAmortizedLoanService {
 
     /**
      * Used in <code>newtonRaphsonMethod</code> to progress towards zero
@@ -20,14 +25,12 @@ public final class AmortizedLoan {
      */
     private static final int SCALE = 10;
 
-    /**
-     * Calculates an approximate annual interest rate using only the principal, term and monthly repayment
-     * @param principal the initial loan amount
-     * @param term number of repayment terms
-     * @param monthlyPayment amount of repayment per term
-     * @return an approximation of the annual interest rate in decimal format (i.e. 0.1 = 10%)
-     */
-    public static double getApproximateAnnualInterestRate(final double principal, final int term, final double monthlyPayment) {
+
+	/* (non-Javadoc)
+	 * @see it.loanquote.services.IAmortizedLoanService#getApproximateAnnualInterestRate(double, int, double)
+	 */
+	@Override
+	public double getApproximateAnnualInterestRate(final double principal, final int term, final double monthlyPayment) {
         if (principal <= 0) {
             throw new IllegalArgumentException("Principal must be positive");
         } else if (monthlyPayment < principal / term) {
@@ -78,14 +81,11 @@ public final class AmortizedLoan {
         return current;
     }
 
-    /**
-     * Calculates the monthly repayment required using amortized interest
-     * @param principal the initial loan amount
-     * @param annualInterestRate the annual interest rate in decimal form (i.e. 0.1 = 10%)
-     * @param numberOfPaymentPeriods number of repayment periods
-     * @return the repayment required to repay capital and interest every month
-     */
-    public static BigDecimal getMonthlyRepayment(final BigDecimal principal, final BigDecimal annualInterestRate, final int numberOfPaymentPeriods) {
+	/* (non-Javadoc)
+	 * @see it.loanquote.services.IAmortizedLoanService#getMonthlyRepayment(java.math.BigDecimal, java.math.BigDecimal, int)
+	 */
+	@Override
+	public BigDecimal getMonthlyRepayment(final BigDecimal principal, final BigDecimal annualInterestRate, final int numberOfPaymentPeriods) {
         final int interestRateCompareTo0 = annualInterestRate.compareTo(new BigDecimal(0));
 
         if (interestRateCompareTo0 < 0) {

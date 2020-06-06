@@ -7,7 +7,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import it.loanquote.services.AmortizedLoan;
+import it.loanquote.services.IAmortizedLoanService;
 
 import static java.math.BigDecimal.ROUND_HALF_UP;
 import static java.math.BigDecimal.ROUND_UP;
@@ -16,6 +19,9 @@ import static java.math.BigDecimal.ROUND_UP;
  * Given a list of lenders, produces quotes on demand using lenders with the lowest rates
  */
 public class LoanQuoteCalculator {
+	
+	@Autowired
+	private IAmortizedLoanService amortizedLoanService;
     /**
      * Total number of repayment months over the entire loan
      */
@@ -107,7 +113,7 @@ public class LoanQuoteCalculator {
      * @return an approximation of the annual interest rate in percentage format
      */
     double getApproximateAnnualInterestRate(final int loanAmount, final BigDecimal monthlyRepayment) {
-        return AmortizedLoan.getApproximateAnnualInterestRate(loanAmount, REPAYMENT_MONTHS, monthlyRepayment.doubleValue()) * 100;
+        return amortizedLoanService.getApproximateAnnualInterestRate(loanAmount, REPAYMENT_MONTHS, monthlyRepayment.doubleValue()) * 100;
     }
 
     /**
@@ -117,7 +123,7 @@ public class LoanQuoteCalculator {
      * @return the repayment required to repay capital and interest every month
      */
     BigDecimal getMonthlyRepayment(final BigDecimal rate, final Integer individualLoanAmount) {
-        return AmortizedLoan.getMonthlyRepayment(new BigDecimal(individualLoanAmount), rate, REPAYMENT_MONTHS);
+        return amortizedLoanService.getMonthlyRepayment(new BigDecimal(individualLoanAmount), rate, REPAYMENT_MONTHS);
     }
 
     /**

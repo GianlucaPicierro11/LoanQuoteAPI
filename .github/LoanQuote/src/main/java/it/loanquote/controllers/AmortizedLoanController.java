@@ -1,39 +1,34 @@
-//package it.loanquote.controllers;
+package it.loanquote.controllers;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import it.loanquote.services.AmortizedLoan;
+import it.loanquote.services.IAmortizedLoanService;
+
+@RestController
+@RequestMapping("/amortized-loan")
+@Validated
+public class AmortizedLoanController {
 //
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.validation.BindingResult;
-//import org.springframework.validation.annotation.Validated;
-//import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.PathVariable;
-//import org.springframework.web.bind.annotation.PostMapping;
-//import org.springframework.web.bind.annotation.RequestMapping;
-//import org.springframework.web.bind.annotation.RestController;
-//import it.aifa.cinquepercento.annotation.role.AllUserRoles;
-//import it.aifa.cinquepercento.annotation.role.IsDoctorOrApaUser;
-//import it.aifa.cinquepercento.dto.AccessRequestDTO;
-//import it.aifa.cinquepercento.dto.StatusDTO;
-//import it.aifa.cinquepercento.service.IAccessRequestService;
-//
-//@RestController
-//@RequestMapping("/access-requests")
-//@Validated
-//public class AccessRequestController {
-//
-//  private static final Logger log = LoggerFactory.getLogger(AccessRequestController.class);
-//
-//  @Autowired
-//  private IAccessRequestService accessRequestService;
-//
-//  @IsDoctorOrApaUser
-//  @PostMapping
-//  public AccessRequestDTO saveAccessRequest(@Validated AccessRequestDTO request,
-//      BindingResult bindingResult) {
-//    log.info("It has been required to save new access request");
-//    return accessRequestService.saveAccessRequest(request, bindingResult);
-//  }
-//
+  private static final Logger log = LoggerFactory.getLogger(AmortizedLoanController.class);
+
+  @Autowired
+  private IAmortizedLoanService amortizedLoanService;
+
+  @GetMapping
+  public double getApproximateAnnualInterestRate(double principal, int term, double monthlyPayment
+     ) {
+    log.info("It has been required to get Approximate Annual Interest Rate");
+    return amortizedLoanService.getApproximateAnnualInterestRate(principal, term, monthlyPayment);
+  }
+
 //  @AllUserRoles
 //  @GetMapping(value = "/{requestId}")
 //  public AccessRequestDTO getAccessRequestById(@PathVariable(required = true) Long requestId) {
@@ -56,4 +51,4 @@
 //    return accessRequestService.isAccessRequestInRevising(accessRequestId);
 //  }
 //
-//}
+}

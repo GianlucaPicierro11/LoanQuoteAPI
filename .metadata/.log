@@ -5665,3 +5665,83 @@ java.lang.IllegalStateException: basedir ${project_loc:loanQuoteId} does not exi
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.egit.core 4 0 2020-06-06 13:05:06.726
+!MESSAGE Pulling 1 repositories
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2020-06-06 13:05:06.726
+!MESSAGE https://github.com/GianlucaPicierro11/LoanQuoteAPI.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/GianlucaPicierro11/LoanQuoteAPI.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:290)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/GianlucaPicierro11/LoanQuoteAPI.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:544)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:138)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:124)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 3 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:25:51.953
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:25:52.022
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:25:52.130
+!MESSAGE classpath=159 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:25:52.130
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 159
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:25:52.131
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:25:52.210
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:29:25.806
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:29:25.807
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:29:25.810
+!MESSAGE classpath=136 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:29:25.810
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 136
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:29:25.810
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 13:29:25.823
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-06 13:51:27.487
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [saveAccessRequest(double, String, String) [in AmortizedLoanController [in [Working copy] AmortizedLoanController.java [in it.loanquote.controllers [in src/main/java [in loanQuoteId]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:607)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:661)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:537)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:760)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:678)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:670)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.lambda$0(SpringBootJavaHoverProvider.java:42)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2020-06-06 13:51:27.531
+!MESSAGE saveAccessRequest(double, String, String) [in AmortizedLoanController [in [Working copy] AmortizedLoanController.java [in it.loanquote.controllers [in src/main/java [in loanQuoteId]]]]] does not exist
