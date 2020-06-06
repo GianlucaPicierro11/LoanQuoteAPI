@@ -16,6 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+   	<spring.fox.version>2.9.2</spring.fox.version>
   </properties>
   
   	<parent>
@@ -54,6 +55,16 @@
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-log4j2</artifactId>
+	</dependency>
+   		<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+		<version>${spring.fox.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger-ui</artifactId>
+		<version>${spring.fox.version}</version>
 	</dependency>
     
     <!-- Spring dependencies -->

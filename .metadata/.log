@@ -5745,3 +5745,509 @@ Java Model Exception: Java Model Status [saveAccessRequest(double, String, Strin
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2020-06-06 13:51:27.531
 !MESSAGE saveAccessRequest(double, String, String) [in AmortizedLoanController [in [Working copy] AmortizedLoanController.java [in it.loanquote.controllers [in src/main/java [in loanQuoteId]]]]] does not exist
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-06 15:41:49.610
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:108)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-06 15:49:24.102
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:108)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:53:22.874
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:53:22.876
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:53:22.879
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:53:22.879
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:53:22.880
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:53:22.886
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 15:53:24.639
+!MESSAGE Could not download sources for io.springfox:springfox-swagger2:${spring.fox.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-swagger2:jar:sources:${spring.fox.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not transfer artifact io.springfox:springfox-swagger2:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger2:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 15:53:24.641
+!MESSAGE Could not resolve artifact io.springfox:springfox-swagger2:jar:sources:${spring.fox.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 15:53:24.641
+!MESSAGE Could not transfer artifact io.springfox:springfox-swagger2:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+!STACK 0
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger2:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 15:53:32.696
+!MESSAGE Could not download sources for io.springfox:springfox-swagger-ui:${spring.fox.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-swagger-ui:jar:sources:${spring.fox.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not transfer artifact io.springfox:springfox-swagger-ui:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger-ui:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 15:53:32.697
+!MESSAGE Could not resolve artifact io.springfox:springfox-swagger-ui:jar:sources:${spring.fox.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 15:53:32.697
+!MESSAGE Could not transfer artifact io.springfox:springfox-swagger-ui:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+!STACK 0
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger-ui:jar:sources:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-sources.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 15:54:56.313
+!MESSAGE Could not download javadoc for io.springfox:springfox-swagger2:${spring.fox.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-swagger2:jar:javadoc:${spring.fox.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not transfer artifact io.springfox:springfox-swagger2:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger2:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 15:54:56.314
+!MESSAGE Could not resolve artifact io.springfox:springfox-swagger2:jar:javadoc:${spring.fox.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 15:54:56.314
+!MESSAGE Could not transfer artifact io.springfox:springfox-swagger2:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+!STACK 0
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger2:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger2/${spring.fox.version}/springfox-swagger2-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-06 15:54:56.929
+!MESSAGE Could not download javadoc for io.springfox:springfox-swagger-ui:${spring.fox.version}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-swagger-ui:jar:javadoc:${spring.fox.version}
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not transfer artifact io.springfox:springfox-swagger-ui:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger-ui:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-06 15:54:56.929
+!MESSAGE Could not resolve artifact io.springfox:springfox-swagger-ui:jar:javadoc:${spring.fox.version}
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-06 15:54:56.929
+!MESSAGE Could not transfer artifact io.springfox:springfox-swagger-ui:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+!STACK 0
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact io.springfox:springfox-swagger-ui:jar:javadoc:${spring.fox.version} from/to remoteIBMArtifactory (https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local): Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:856)
+	at io.takari.aether.connector.AetherRepositoryConnector$2.wrap(AetherRepositoryConnector.java:1)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.flush(AetherRepositoryConnector.java:630)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:309)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:499)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:400)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:225)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:202)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:257)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:778)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: io.takari.aether.connector.AuthorizationException: Access denied to https://eu.artifactory.swg-devops.com:443/artifactory/gbs-sgi-aifa-maven-local/io/springfox/springfox-swagger-ui/${spring.fox.version}/springfox-swagger-ui-${spring.fox.version}-javadoc.jar. Error code 403, Forbidden
+	at io.takari.aether.connector.AetherRepositoryConnector.handleResponseCode(AetherRepositoryConnector.java:368)
+	at io.takari.aether.connector.AetherRepositoryConnector.access$8(AetherRepositoryConnector.java:362)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.resumableGet(AetherRepositoryConnector.java:574)
+	at io.takari.aether.connector.AetherRepositoryConnector$GetTask.run(AetherRepositoryConnector.java:452)
+	at io.takari.aether.connector.AetherRepositoryConnector.get(AetherRepositoryConnector.java:303)
+	... 22 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:58:50.845
+!MESSAGE Preparing classpath changed notification loanQuoteId
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:58:50.845
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:58:50.850
+!MESSAGE classpath=149 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:58:50.850
+!MESSAGE buffering callback sts4.classpath.vphJzSxs loanQuoteId false 149
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:58:50.851
+!MESSAGE executing callback sts4.classpath.vphJzSxs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-06 15:58:50.947
+!MESSAGE executing callback sts4.classpath.vphJzSxs SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2020-06-06 16:05:19.695
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-06 16:05:19.695
+!MESSAGE A conflict occurred for COMMAND+R:
+Binding(COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2dc4dbd8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(COMMAND+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f35c06c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-06 16:16:01.656
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:108)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-06 16:16:21.503
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:108)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-06-06 16:20:04.522
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:108)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)

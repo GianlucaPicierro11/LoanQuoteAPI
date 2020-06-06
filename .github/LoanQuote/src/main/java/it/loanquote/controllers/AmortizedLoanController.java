@@ -1,14 +1,19 @@
 package it.loanquote.controllers;
 
+import java.math.BigDecimal;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.loanquote.dtos.PanDTO;
+import it.loanquote.dtos.PtmDTO;
 import it.loanquote.services.AmortizedLoan;
 import it.loanquote.services.IAmortizedLoanService;
 
@@ -22,33 +27,16 @@ public class AmortizedLoanController {
   @Autowired
   private IAmortizedLoanService amortizedLoanService;
 
-  @GetMapping
-  public double getApproximateAnnualInterestRate(double principal, int term, double monthlyPayment
-     ) {
+  @PostMapping("/approximate-annual-interest-rate")
+  public double getApproximateAnnualInterestRate(@RequestBody PtmDTO request) {
     log.info("It has been required to get Approximate Annual Interest Rate");
-    return amortizedLoanService.getApproximateAnnualInterestRate(principal, term, monthlyPayment);
+    return amortizedLoanService.getApproximateAnnualInterestRate(request.getPrincipal(), request.getTerm(), request.getMonthlyPayment());
   }
-
-//  @AllUserRoles
-//  @GetMapping(value = "/{requestId}")
-//  public AccessRequestDTO getAccessRequestById(@PathVariable(required = true) Long requestId) {
-//    log.info("It has been required to retrive access request");
-//    return accessRequestService.getAccessRequestById(requestId);
-//  }
-//
-//  @AllUserRoles
-//  @GetMapping(value = "/{requestId}/status")
-//  public StatusDTO getAccessRequestStatus(@PathVariable(required = true) Long requestId) {
-//    log.info("It has been required to retrive status for access request with id {}", requestId);
-//    return accessRequestService.getAccessRequestStatusById(requestId);
-//  }
-//
-//  @AllUserRoles
-//  @GetMapping(value = "/{accessRequestId}/revising")
-//  public boolean isAccessRequestInRevising(@PathVariable(required = true) Long accessRequestId) {
-//    log.info("It has been required to check if access request with id {} request is in revising",
-//        accessRequestId);
-//    return accessRequestService.isAccessRequestInRevising(accessRequestId);
-//  }
-//
+  
+  @PostMapping("/monthly-repayment")
+  public BigDecimal getMonthlyRepayment(@RequestBody PanDTO request) {
+    log.info("It has been required to get Approximate Annual Interest Rate");
+    return amortizedLoanService.getMonthlyRepayment(request.getPrincipal(),request.getAnnualInterestRate(),request.getNumberOfPaymentPeriods());
+  }
+  
 }

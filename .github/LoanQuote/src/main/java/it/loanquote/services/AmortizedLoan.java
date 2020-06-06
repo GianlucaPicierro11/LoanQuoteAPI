@@ -26,9 +26,6 @@ public class AmortizedLoan implements IAmortizedLoanService {
     private static final int SCALE = 10;
 
 
-	/* (non-Javadoc)
-	 * @see it.loanquote.services.IAmortizedLoanService#getApproximateAnnualInterestRate(double, int, double)
-	 */
 	@Override
 	public double getApproximateAnnualInterestRate(final double principal, final int term, final double monthlyPayment) {
         if (principal <= 0) {
@@ -81,9 +78,7 @@ public class AmortizedLoan implements IAmortizedLoanService {
         return current;
     }
 
-	/* (non-Javadoc)
-	 * @see it.loanquote.services.IAmortizedLoanService#getMonthlyRepayment(java.math.BigDecimal, java.math.BigDecimal, int)
-	 */
+
 	@Override
 	public BigDecimal getMonthlyRepayment(final BigDecimal principal, final BigDecimal annualInterestRate, final int numberOfPaymentPeriods) {
         final int interestRateCompareTo0 = annualInterestRate.compareTo(new BigDecimal(0));
